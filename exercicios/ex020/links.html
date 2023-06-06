@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: 'Courier New', Courier, monospace;
+            background-color: antiquewhite;
+
+        }
+        a{
+          color: red ;  
+          text-decoration: none;
+          
+
+        }
+
+        .especial{
+            color: slateblue;}
+        
+        a:active{
+            color: yellow;
+
+        }
+        a:hover{
+            color: black;
+
+        }
+        
+        .especial::before{
+            content: '😻 ';
+        }
+
+        .especial::after{
+            content: ' 😻';
+        }
+        a:visited{
+            color: darkred;
+        }
+
+    </style>
+</head>
+
+<body>
+    <h1>Personalizano Links</h1>
+    <ul>
+        <li><a href="https://open.spotify.com/user/31vtal434yz2dw4i3eo4vwviq67e" target="_blank">Spotify</a></li>
+        <li><a href="https://www.youtube.com/channel/UCoHIsEArTD8wQJ8PWi-e9Ag" target="_blank">Youtube</a></li>
+        <li><a href="https://www.leagueofgraphs.com/summoner/br/eróe" target="_blank">lol</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Fb5jGmMvhtM" class="especial" target="_blank">Video legal</a></li>
+
+
+    </ul>
+
+
+    
+</body>
+</html>
