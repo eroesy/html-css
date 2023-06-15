@@ -14,6 +14,7 @@
             width: 800px;
             height: 300px;
             border-collapse: collapse;
+            position: relative;
             
         }
         th, td{
@@ -21,7 +22,18 @@
             padding: 15px;
 
         }
+        td:hover{
+            background-color: yellow;
+            transition: 1s;
 
+
+        }
+        /*odd even (nuemros)n*/
+        tbody > tr:nth-child(odd){
+            background-color: rgb(66, 66, 66);
+            color: white;
+
+        }
         #num{
             text-align: right;
 
@@ -31,8 +43,19 @@
             text-align: center;
             font-weight: bold;
         }
+        #pos{
+            text-align: center;
+
+        }
+        thead > tr >th{
+            position: sticky;
+            top: -1px;
+            background-color: rgb(44, 43, 43);
+
+
+        }
         thead, tfoot{
-            background-color: grey;
+            background-color: rgb(44, 43, 43);
             color: white;
 
         }
@@ -42,36 +65,37 @@
 </head>
 <body>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Posições</th>
-                <th>Estados</th>
-                <th>População</th>
+                <th scope="col" style="width: 100px;">Posições</th>
+                <th scope="col">Estados</th>
+                <th scope="'col" style="width: 120px;">População</th>
             </tr>
 
         </thead>
         <tbody>
             <tr>
-                <td>1°</td>
+                <td id ='pos'>1°</td>
                 <td id="estados">São Paulo</td>
                 <td id="num">41 262 199</td>
             </tr>
             <tr>
-                <td>2°</td>
+                <td id="pos">2°</td>
                 <td id="estados">Minas Gerais</td>
                 <td id="num">19 597 330</td>
             </tr>
-                <td>3°</td>
+                <td id="pos">3°</td>
                 <td id="estados">Rio de Janeiro</td>
                 <td id="num">15 989 929</td>
             </tr>
             <tr>
-                <td>4°</td>
+                <td id="pos">4°</td>
                 <td id="estados">Bahia</td>
                 <td id="num">14 016 906</td>
             </tr>
             <tr>
-                <td>5°</td>
+                <td id="pos">5°</td>
                 <td id="estados">Paraná</td>
                 <td id="num">10 444 526</td>
 
@@ -79,31 +103,31 @@
 
             </tr>
             <tr>
-                <td>6°</td>
+                <td id="pos">6°</td>
                 <td id="estados">Rio Grande do Sul</td>
                 <td id="num">10 693 929</td>
             </tr>
             <tr>
-                <td>7°</td>
+                <td id="pos">7°</td>
                 <td id="estados">Pernambuco</td>
                 <td id="num">8 796 448</td>
             </tr>
             <tr>
-                <td>8°</td>
+                <td id="pos">8°</td>
                 <td id="estados">Ceará</td>
                 <td id="num">8 452 381</td>
 
 
             </tr>
             <tr>
-                <td>9°</td>
+                <td id="pos">9°</td>
                 <td id="estados">Pará</td>
                 <td id="num">7 581 051</td>
 
 
             </tr>
             <tr>
-                <td>10°</td>
+                <td id="pos">10°</td>
                 <td id="estados">Santa Catarina</td>
                 <td id="num">6 248 436</td>
 
@@ -119,6 +143,12 @@
 
 
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dicta aliquid minus ex? Natus ipsa architecto sed perspiciatis nemo ducimus culpa, nisi, recusandae autem odio doloribus voluptatum eum dolorem. Illo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ducimus reprehenderit distinctio magnam fugiat, eveniet ipsa cumque totam alias doloribus dolorum unde voluptate quam nulla numquam molestiae odio quisquam. Cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis beatae vero porro impedit nisi laudantium debitis quam assumenda blanditiis delectus neque, esse pariatur voluptatem harum a fugiat dolorum eligendi officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et excepturi eum ex mollitia ullam sapiente! Iusto non dolorum asperiores at reiciendis voluptatem cum molestias, rem error possimus quia corporis quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consequatur odio corrupti debitis, veritatis delectus quo, totam recusandae culpa illo reiciendis possimus accusantium accusamus, vero sapiente id praesentium eaque eligendi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dicta aliquid minus ex? Natus ipsa architecto sed perspiciatis nemo ducimus culpa, nisi, recusandae autem odio doloribus voluptatum eum dolorem. Illo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ducimus reprehenderit distinctio magnam fugiat, eveniet ipsa cumque totam alias doloribus dolorum unde voluptate quam nulla numquam molestiae odio quisquam. Cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis beatae vero porro impedit nisi laudantium debitis quam assumenda blanditiis delectus neque, esse pariatur voluptatem harum a fugiat dolorum eligendi officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et excepturi eum ex mollitia ullam sapiente! Iusto non dolorum asperiores at reiciendis voluptatem cum molestias, rem error possimus quia corporis quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consequatur odio corrupti debitis, veritatis delectus quo, totam recusandae culpa illo reiciendis possimus accusantium accusamus, vero sapiente id praesentium eaque eligendi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dicta aliquid minus ex? Natus ipsa architecto sed perspiciatis nemo ducimus culpa, nisi, recusandae autem odio doloribus voluptatum eum dolorem. Illo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ducimus reprehenderit distinctio magnam fugiat, eveniet ipsa cumque totam alias doloribus dolorum unde voluptate quam nulla numquam molestiae odio quisquam. Cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis beatae vero porro impedit nisi laudantium debitis quam assumenda blanditiis delectus neque, esse pariatur voluptatem harum a fugiat dolorum eligendi officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et excepturi eum ex mollitia ullam sapiente! Iusto non dolorum asperiores at reiciendis voluptatem cum molestias, rem error possimus quia corporis quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consequatur odio corrupti debitis, veritatis delectus quo, totam recusandae culpa illo reiciendis possimus accusantium accusamus, vero sapiente id praesentium eaque eligendi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dicta aliquid minus ex? Natus ipsa architecto sed perspiciatis nemo ducimus culpa, nisi, recusandae autem odio doloribus voluptatum eum dolorem. Illo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ducimus reprehenderit distinctio magnam fugiat, eveniet ipsa cumque totam alias doloribus dolorum unde voluptate quam nulla numquam molestiae odio quisquam. Cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis beatae vero porro impedit nisi laudantium debitis quam assumenda blanditiis delectus neque, esse pariatur voluptatem harum a fugiat dolorum eligendi officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et excepturi eum ex mollitia ullam sapiente! Iusto non dolorum asperiores at reiciendis voluptatem cum molestias, rem error possimus quia corporis quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consequatur odio corrupti debitis, veritatis delectus quo, totam recusandae culpa illo reiciendis possimus accusantium accusamus, vero sapiente id praesentium eaque eligendi.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa dicta aliquid minus ex? Natus ipsa architecto sed perspiciatis nemo ducimus culpa, nisi, recusandae autem odio doloribus voluptatum eum dolorem. Illo? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius ducimus reprehenderit distinctio magnam fugiat, eveniet ipsa cumque totam alias doloribus dolorum unde voluptate quam nulla numquam molestiae odio quisquam. Cumque. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis beatae vero porro impedit nisi laudantium debitis quam assumenda blanditiis delectus neque, esse pariatur voluptatem harum a fugiat dolorum eligendi officia. Lorem ipsum dolor sit amet consectetur adipisicing elit. Et excepturi eum ex mollitia ullam sapiente! Iusto non dolorum asperiores at reiciendis voluptatem cum molestias, rem error possimus quia corporis quos. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi consequatur odio corrupti debitis, veritatis delectus quo, totam recusandae culpa illo reiciendis possimus accusantium accusamus, vero sapiente id praesentium eaque eligendi.</p>
+
     
 </body>
 </html>
