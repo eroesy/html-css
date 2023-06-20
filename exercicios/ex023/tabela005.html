@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela </title>
+    <style>
+        table{
+            border-collapse: collapse;
+            width: 500px;
+            
+        }
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+
+
+        }
+        caption{
+            padding: 10px;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .cnome{
+            background-color: chartreuse;
+
+        }
+        .cprofi{
+            background-color: red;
+
+        }
+        .csexo{
+            background-color: blueviolet;
+
+        }
+        #brilhar{
+            background-color: gold;
+
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo" span="2">
+            <col class="cprofi">
+        </colgroup>
+        <caption>
+            Cadastro
+        </caption>
+        <thead>
+            <th>Nome</th>
+            <th>Sexo</th>
+            <th>Idade</th>
+            <th>Profissão</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana Maria</td>
+                <td>F</td>
+                <td>25</td>
+                <td>jornalista</td>
+            </tr>
+            <tr id="brilhar" >
+                <td>Matheus</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Programador</td>
+            
+
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>m</td>
+                <td>42</td>
+                <td>Professor</td>
+            </tr>
+            <tr>
+                <td>Hélio</td>
+                <td>M</td>
+                <td>19</td>
+                <td>Vendedor</td>
+            </tr>
+
+
+        </tbody>
+    </table>
+    
+</body>
+</html>
